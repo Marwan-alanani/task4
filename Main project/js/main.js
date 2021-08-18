@@ -1,19 +1,18 @@
 const navbar = $(".navbar")
 const home = $("#home")
 const button = $(".go-home .icon")
-let Mobilequery = window.matchMedia("(max-width: 426px)")
 const burger = $(".burger")
 const navbar_items = $(".navbar ul")
 const opacity = $(".opacity") 
 const close_icon = $(".navbar .close")
 // links
-const homeLink = $(".1link")
-const aboutLink = $(".2link")
-const symptomsLink = $(".3link")
-const preventionLink = $(".4link") 
-const treatmentlink = $(".5link")
-const faqLink = $(".6link")
-const newsLink = $(".7link")
+const homeLink = $(".home-link")
+const aboutLink = $(".about-link")
+const symptomsLink = $(".symptoms-link")
+const preventionLink = $(".prevention-link") 
+const treatmentlink = $(".treatment-link")
+const faqLink = $(".faq-link")
+const newsLink = $(".news-link")
 // faq'
 const faqTransm = $(".transm-faq")
 const faqList = $(".faq .faq-li")
@@ -305,6 +304,25 @@ function change(ul,plusButton,minusButton,info){
 
 // application
 $(window).scroll(function (){
+  if(window.innerWidth < 427){
+    Active(homeLink,0,1226)
+    Active(aboutLink,1450,2722)
+    Active(symptomsLink,4920,6900)
+    Active(preventionLink,6901,11236)
+    Active(treatmentlink,11237,12568)
+    Active(faqLink,14084,15552)
+    Active(newsLink,15553,20000)
+  }
+  else if(window.innerWidth < 769){
+    Active(homeLink,0,1250)
+    Active(aboutLink,1251,2420)
+    Active(symptomsLink,3900,5295)
+    Active(preventionLink,5296,8866)
+    Active(treatmentlink,8867,10032)
+    Active(faqLink,11532,12808)
+    Active(newsLink,12809,14900)
+  }
+  else{
   Active(homeLink,0,660)
   Active(aboutLink,661,1218)
   Active(symptomsLink,2226,2960)
@@ -312,6 +330,7 @@ $(window).scroll(function (){
   Active(treatmentlink,5068,5900)
   Active(faqLink,6940,7508)
   Active(newsLink,7509,10000)
+  }
 })
 $(window).scroll(function (){
   if ($(this).scrollTop() > 12){
@@ -358,7 +377,7 @@ $(window).scroll(function (){
     faq(faqBusters,firstBustersInfo)
   })
    
- // button function
+ // button functions
  
 //  disease
  firstDiseaseLi.click(function(){
@@ -490,11 +509,10 @@ close_icon.click(function(){
 
 
 
-// 
 
 
 
-console.log($(window).scrollTop());
+
 
 
 

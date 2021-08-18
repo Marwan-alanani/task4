@@ -1388,6 +1388,18 @@ footer a:hover{
     /*tablet hands  */
 
     /*tablet treatment  */
+    .treatment .info{
+        flex-wrap: wrap;
+    }
+    .treatment .info .left-info{
+        flex-basis: 70%;
+        margin: auto;
+    }
+    .treatment .info .right-info{
+        margin: 50px auto 0;
+        flex-basis: 70%;
+    }
+    /*tablet protect  */
     .protect .boxes .center{
     flex-basis: 90%;
     order: 1;
@@ -1407,8 +1419,40 @@ footer a:hover{
     .protect .boxes .right .box .svg{
         right:75%
     }
-    /*tablet treatment  */
+
+    /* tablet faq */
+    .faq .boxes{
+        flex-wrap: wrap;
+    }
+    .faq .boxes .left{
+        flex-basis: 70%;
+        margin: 0 auto 50px
+    }
+    .faq .boxes .right{
+    flex-basis: 95%;
+    margin: auto;
+    }
+
+    /* tablet news */
+    .news .boxes{
+        flex-wrap: wrap;
+    }
+    .news .boxes .box{
+        flex-basis: 40%;
+        margin: 0 auto 50px;
+    }
     
+    /* footer */
+    footer .boxes{
+        flex-wrap: wrap;
+    }
+    footer .boxes .text:first-of-type{
+        flex-basis: 90%;
+    }
+    footer .boxes .text{
+        flex-basis: 20%;
+        margin: 0 auto 50px;
+    }
 }
 @media (max-width: 426px) {
     /* media navbar */
@@ -1606,7 +1650,7 @@ footer a:hover{
 
     /*mobile treatment  */
 
-    /* protect */
+    /*mobile protect */
     .protect .boxes .left{
         flex-basis: 45%;
         order: 2;
@@ -1639,5 +1683,60 @@ footer a:hover{
         margin: 20px 0 0 20px;
     }
 
-    /* protect */
+    /* mobile protect */
+
+    /* mobile faq */
+    .faq .title{
+        width: 100%;
+    }
+    .faq .boxes{
+        flex-wrap: wrap;
+    }
+    .faq .boxes .left{
+    flex-basis: 70%;
+    margin: 0 auto 50px;
+    }
+    .faq .boxes .left p{
+        line-height: 1;
+        margin-bottom: 0px;
+    }
+    .faq .boxes .right{
+        margin: auto;
+        flex-basis: 95%;
+    }
+
+    /*mobile news  */
+    .news .boxes{
+        flex-wrap: wrap;
+    }
+    .news .boxes .box{
+        flex-basis: 100%;
+        margin: 0 auto 50px
+    }
+
+    /* mobile footer */
+    footer .boxes{
+        flex-wrap: wrap;
+    }
+    footer .boxes .text:first-of-type{
+        flex-basis: 80%;
+    }
+    footer .boxes .text{
+        flex-basis: 80%;
+    }
+    footer .boxes .text h2{
+        text-align: center;
+    }
+    footer .boxes .text h5{
+        text-align: center;
+    }
+    footer .copyrights .copyright{
+        flex-wrap: wrap;
+    }
+    footer .copyright p {
+        margin-bottom: 20px;
+    }
+    footer .copyright a{
+        flex-basis: 60%;
+    }
 }
